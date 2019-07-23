@@ -1,0 +1,21 @@
+.title {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 72px;
+}
+
+.jumbotron {
+  width: 100%;
+  background-image: url(https://hpmedia.bloomsbury.com/rep/g/page-background%20-%20product.png);
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-family: 'Marcellus SC', serif;
+  font-size: 24px !important;
+}
