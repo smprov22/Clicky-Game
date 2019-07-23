@@ -9,8 +9,7 @@ function Title(props) {
         <p className="lead subtitle">Try and keep track of all the Weasley's! Click on an image to earn points, but don't click on any more than once!</p>
       </div>
       <div className="container">
-        <p className="guessOutcome">You guessed (in)correctly!</p>
-        <p className="score">Score: 0 | Top Score: 0</p>
+        <p className="score">Score: {props.score} | Top Score: {props.highscore}</p>
       </div>
     </div>
   );
