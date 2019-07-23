@@ -1,21 +1,39 @@
 .title {
   width: 100%;
   text-align: center;
-  color: white;
+  color: black;
   font-family: 'Bigelow Rules', cursive;
   font-size: 72px;
 }
 
 .jumbotron {
-  width: 100%;
-  background-image: url(https://hpmedia.bloomsbury.com/rep/g/page-background%20-%20product.png);
-  background-size: cover;
-  background-position: center;
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 50px auto;
+  padding: 2rem;
 }
 
 p {
-  text-align: center;
-  color: white;
+  color: black;
   font-family: 'Marcellus SC', serif;
+}
+
+.subtitle {
   font-size: 24px !important;
+  text-align: center;
+  padding: 5px 50px;
+}
+
+.guessOutcome {
+  float: left;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 25px;
+}
+
+.score {
+  float: right;
+  font-size: 20px;
+  margin-right: 10%;
+  margin-top: 25px;
 }
