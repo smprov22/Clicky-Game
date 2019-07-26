@@ -41,7 +41,6 @@ class App extends Component {
     }
 
     clickCount = id => {
-      let newScore = 0;
       this.state.weasleys.find((current, i) => {
         if (current.id === id) {
           if(weasleys[i].count === 0){
@@ -73,6 +72,7 @@ class App extends Component {
             clickCount={this.clickCount}
             id={weasley.id}
             image={weasley.image}
+            key={weasley.id}
           />
         ))}
         </Wrapper>
