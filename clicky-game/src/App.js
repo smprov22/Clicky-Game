@@ -21,7 +21,7 @@ class App extends Component {
       this.state.weasleys.forEach(weasley => {
         weasley.count = 0;
       });
-      alert(`Congratulations! You only clicked each Weasley once! \nScore: ${this.state.score}`);
+      alert("Congratulations! You win! You only clicked each Weasley once!");
       this.setState({score: 0});
       return true;
     }
@@ -41,18 +41,22 @@ class App extends Component {
     }
 
     clickCount = id => {
+      let newScore = 0;
       this.state.weasleys.find((current, i) => {
         if (current.id === id) {
           if(weasleys[i].count === 0){
             weasleys[i].count = weasleys[i].count + 1;
             this.setState({score : this.state.score + 1}, function(){
               console.log(this.state.score);
+              if (this.state.score === 9) {
+                this.winGame();
+              }
             });
+            // this.setState(prevState => prevState.score += 1);
             this.state.weasleys.sort(() => Math.random() - 0.5)
             return true; 
-          } if (this.state.score === 9) {
-            this.winGame();
-          }
+          } 
+          
           else {
             this.gameOver();
           }
