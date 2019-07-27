@@ -2,7 +2,7 @@
 
 https://smprov22.github.io/Clicky-Game/
  
-![Which Weasley Click Game](/public/screenshot/Capture.PNG)
+![Which Weasley Click Game](/clicky-game/public/screenshot/Capture.PNG)
  
 This is a React app with a little Bootstrap and additional CSS styling added in.  
 
